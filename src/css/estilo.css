@@ -1,7 +1,7 @@
 :root{
     --color-primary:rgb(252, 3, 3);
-    --bg-dark:#050505;
-    --text-color:#f3f1f1;
+    --bg-dark:#0e0d0d;
+    --text-color:#ffffff;
     --btn-color:rgb(252, 3, 3);
     --header-bg: rgba(153, 7, 7, 0.8);
     --linear-bg: linear-gradient(to right,rgb(105, 4, 4),rgb(209, 18, 18));
@@ -21,10 +21,19 @@ body{
 
 header{
     display:flex;
-    justify-content: space-between;
     align-items: center;
     padding:10px 5%;
     background: var(--header-bg);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header img{
+    width:75px;
+    object-fit: contain;
+}
+
+nav{
+    margin-left: auto;
 }
 
 .logo{
@@ -101,6 +110,7 @@ footer{
     text-align: center;
     padding:40px;
     margin-top: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 @media (max-width:768px){
     .menu-hamburguer{
