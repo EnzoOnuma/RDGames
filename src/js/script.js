@@ -1,5 +1,5 @@
 // ARRAY DE IMAGENS
-let imagens = ["src/assets/1.jpeg", "src/assets/2.jpeg", "src/assets/3.jpeg"];
+let imagens = ["src/assets/1.webp", "src/assets/2.png", "src/assets/3.jpg"];
 // POSIÇÃO QUE VAI INICIAR AS IMAGENS
 let index=0;
 // TEMPO PARA TROCAR AS IMAGENS
