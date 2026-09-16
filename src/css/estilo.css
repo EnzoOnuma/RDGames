@@ -1,7 +1,9 @@
 :root{
     --color-primary:rgb(252, 3, 3);
+    --color-primary2:rgb(221, 155, 11);
     --bg-dark:#0e0d0d;
     --text-color:#ffffff;
+    --bg-card:rgb(24, 23, 23);
     --btn-color:rgb(252, 3, 3);
     --header-bg: rgba(153, 7, 7, 0.8);
     --linear-bg: linear-gradient(to right,rgb(105, 4, 4),rgb(209, 18, 18));
@@ -105,6 +107,73 @@ nav ul li a:hover{
     border-radius: 50%;
     margin-top: 50px;
 }
+
+/* CARD */
+/* Cards */
+
+.card{
+    display: grid;
+    /* CRIA COLINA AUTOMATICA QUE SE AJUSTAM MINIMO E MAXIMO DE 250px E PREENCHE O ESPAÇO (FIT) */
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-game{
+    background: var(--bg-card);
+    border-radius: 20px;
+    border: 2px solid var(--text-color);
+    overflow: hidden;
+    transform: transform 0.3s ease;
+}
+
+.card-game:hover{
+    transform: translateY(-10px);
+    border: 5px solid;
+    border-color: var(--btn-color);
+
+}
+
+.card-game img{
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    padding: 15px;
+    text-align: center;
+}
+
+.card-content h3{
+    font-size: 1.6rem;
+    color: var(--btn-color);
+    margin-bottom: 20px;
+}
+
+.preco{
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.btn-comprar{
+    background: var(--btn-color);
+    width: 40%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.btn-comprar:hover{
+    background: var(--color-primary2);
+    color: var(--text-color);
+    transform: scale(1.2);
+}
+
 
 footer{
     text-align: center;
